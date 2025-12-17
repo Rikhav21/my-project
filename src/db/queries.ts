@@ -1,4 +1,4 @@
-import { db } from './db'
+import { db } from './index'
 import { gifts } from './schema'
 import { eq } from 'drizzle-orm'
 

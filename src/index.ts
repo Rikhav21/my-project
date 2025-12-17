@@ -46,4 +46,9 @@ app.delete('/gifts/:id', async (c) => {
   return c.text('Deleted')
 })
 
-export default app
+const port = Number(process.env.PORT) || 3000
+
+export default {
+  port,
+  fetch: app.fetch,
+}
